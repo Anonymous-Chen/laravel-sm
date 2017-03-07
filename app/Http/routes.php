@@ -34,6 +34,11 @@ Route::get('student/a',['uses'=>'StudentController@a']);
 
 Route::group(['middleware' => ['web']], function () {
     Route::get('student/index',['uses'=>'StudentController@index']);
-    Route::get('student/create',['uses'=>'StudentController@create']);
+    Route::any('student/create',['uses'=>'StudentController@create']);
     Route::any('student/save',['uses'=>'StudentController@save']);
+    Route::any('student/update/{id}',['uses'=>'StudentController@update']);
+    Route::any('student/delete/{id}',['uses'=>'StudentController@delete']);
+    Route::any('student/detail/{id}',['uses'=>'StudentController@detail']);
 });
+
+//在最后的.env 文件中改数据库，中间件在， get与any的区别

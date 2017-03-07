@@ -1,3 +1,10 @@
+
+{{ dd($student) }}
+
+@foreach( $student->sex() as $ind=>$val )
+    <p>{{  $ind + $val }}</p>
+    @endforeach
+
 <form class="form-horizontal" method="post" action="{{ url('student/save') }}">
     <div class="form-group">
         <label for="name" class="col-sm-2 control-label">姓名</label>
@@ -43,3 +50,4 @@
         </div>
     </div>
 </form>
+

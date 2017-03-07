@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>轻松学会Laravel - @yield('title')</title>
+    <title>学生管理系统 - @yield('title')</title>
     <!-- Bootstrap CSS 文件 -->
     <link rel="stylesheet" href="{{ asset('static/bootstrap/css/bootstrap.min.css')}}">
     @section('style')
@@ -19,9 +19,9 @@
     <div class="jumbotron">
 
         <div class="container">
-            <h2>轻松学会Laravel</h2>
+            <h2>学生管理系统</h2>
 
-            <p> - 玩转Laravel表单</p>
+            <p> - Laravel表单</p>
         </div>
     </div>
 @show
@@ -57,7 +57,7 @@
 @section('footer')
 <div class="jumbotron" style="margin:0;">
     <div class="container">
-        <span>  @2016 imooc</span>
+        <span>  @2017 AnonymouChen</span>
     </div>
 </div>
 @show
